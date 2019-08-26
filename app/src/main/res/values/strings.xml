@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Elevator_Mobile</string>
+
+    <string name="confirm">确认</string>
+    <string name="main">主页</string>
+    <string name="procedure">小程序</string>
+    <string name="mine">我的</string>
+</resources>

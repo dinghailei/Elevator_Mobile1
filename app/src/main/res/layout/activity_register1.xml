@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include layout="@layout/item_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:src="@drawable/schindler_logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="80dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_user"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:hint="请使用手机号注册"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:maxLength="11"
+                    android:cursorVisible="false"/>
+
+                <Button
+                    android:id="@+id/btn_send_code"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="发送验证码"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_password"/>
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="请 输 入 密 码"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:inputType="textPassword"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:cursorVisible="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_verification_code"/>
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:hint="验 证 码"
+                    android:cursorVisible="false"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="注 册"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeSettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_title"/>
+
+        <ListView
+            android:id="@+id/lv_storey_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/title"
+            android:dividerHeight="1dp"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true">
+
+        </ListView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
